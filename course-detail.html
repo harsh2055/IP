@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Advanced Program | Elite Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #FF7F1E; }
+        .text-primary { color: #FF7F1E; }
+        .bg-dark { background-color: #1E293B; }
+        .text-dark { color: #1E293B; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                    <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-primary transition">Home</a>
+                    <a href="courses.html" class="text-primary font-semibold">Courses</a>
+                    <a href="faculty.html" class="hover:text-primary transition">Faculty</a>
+                    <a href="results.html" class="hover:text-primary transition">Success Stories</a>
+                    <a href="about.html" class="hover:text-primary transition">About Us</a>
+                    <a href="#enroll" class="bg-primary text-white px-5 py-2.5 rounded-md font-semibold shadow-md">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Hero -->
+    <section class="py-20 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-3/5 space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-orange-50 px-4 py-1.5 rounded-full border border-orange-100">
+                        <span class="w-2 h-2 bg-primary rounded-full"></span>
+                        <span class="text-[10px] font-black text-primary uppercase tracking-widest">Premium Program</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-black text-dark leading-tight tracking-tight">JEE Advanced <br><span class="text-primary">Achievers Batch 2025</span></h1>
+                    <p class="text-gray-500 text-lg leading-relaxed font-medium">A rigorous, intensive program designed for high-potential students aiming for top 500 ranks in JEE Advanced. Features advanced problem-solving sessions, personal mentorship, and a competitive peer group.</p>
+                    <div class="flex flex-wrap gap-8">
+                        <div class="space-y-1">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Duration</p>
+                            <p class="text-lg font-black text-dark">1 Year</p>
+                        </div>
+                        <div class="space-y-1 border-l pl-8 border-gray-100">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Eligibility</p>
+                            <p class="text-lg font-black text-dark">Class 12th / Droppers</p>
+                        </div>
+                        <div class="space-y-1 border-l pl-8 border-gray-100">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Mode</p>
+                            <p class="text-lg font-black text-dark">Hybrid (Online + Offline)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/5 w-full">
+                    <div class="bg-dark p-10 rounded-3xl shadow-2xl text-white space-y-8 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                        <div class="space-y-2">
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest">Next Batch Starts</p>
+                            <p class="text-3xl font-black italic">15th May, 2024</p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                                <span class="text-gray-400 font-medium">Course Fee</span>
+                                <span class="text-2xl font-black text-white">₹ 85,000</span>
+                            </div>
+                            <div class="space-y-4">
+                                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Includes:</p>
+                                <ul class="space-y-3 text-sm font-semibold">
+                                    <li class="flex items-center gap-3">
+                                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        Printed Study Material
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        Weekly All-India Test Series
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        Personal Doubt Solving
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#enroll" class="block w-full bg-primary text-white py-4 rounded-xl text-center font-black text-lg hover:bg-orange-600 transition shadow-xl shadow-orange-900/50">Apply for Enrollment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-20">
+            <div class="lg:w-3/5 space-y-12">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-dark tracking-tight">Curriculum & Pedagogy</h2>
+                    <p class="text-gray-500 font-medium leading-relaxed">Our curriculum is designed by IITians, focusing on deep conceptual clarity followed by application-based problem solving.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Unit 1 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+                        <button class="w-full px-8 py-6 flex items-center justify-between text-left group">
+                            <div class="flex items-center gap-6">
+                                <span class="text-3xl font-black text-gray-100 group-hover:text-primary transition">01</span>
+                                <div>
+                                    <h4 class="text-lg font-black text-dark">Mechanics & Thermodynamics</h4>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">Physics | 12 Weeks</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                    <!-- Unit 2 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+                        <button class="w-full px-8 py-6 flex items-center justify-between text-left group">
+                            <div class="flex items-center gap-6">
+                                <span class="text-3xl font-black text-gray-100 group-hover:text-primary transition">02</span>
+                                <div>
+                                    <h4 class="text-lg font-black text-dark">Calculus & Algebra II</h4>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">Mathematics | 10 Weeks</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                    <!-- Unit 3 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition">
+                        <button class="w-full px-8 py-6 flex items-center justify-between text-left group">
+                            <div class="flex items-center gap-6">
+                                <span class="text-3xl font-black text-gray-100 group-hover:text-primary transition">03</span>
+                                <div>
+                                    <h4 class="text-lg font-black text-dark">Organic Reaction Mechanisms</h4>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">Chemistry | 14 Weeks</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty for this course -->
+            <div class="lg:w-2/5 space-y-12">
+                 <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-dark tracking-tight">Your Mentors</h2>
+                    <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Directly teaching this batch.</p>
+                </div>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6 group">
+                        <img src="assets/images/faculty-3.png" class="w-20 h-20 rounded-2xl object-cover shadow-lg group-hover:scale-105 transition">
+                        <div>
+                            <h4 class="text-lg font-black text-dark">Dr. Arvind Sharma</h4>
+                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest">HOD Physics, IIT Delhi</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 group">
+                        <img src="assets/images/faculty-4.png" class="w-20 h-20 rounded-2xl object-cover shadow-lg group-hover:scale-105 transition">
+                        <div>
+                            <h4 class="text-lg font-black text-dark">Prof. Meera Reddy</h4>
+                            <p class="text-primary font-bold text-[10px] uppercase tracking-widest">Senior Chemistry, IISc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section id="enroll" class="py-24 bg-gray-50 border-t">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-12 rounded-[2rem] shadow-2xl border border-gray-100 space-y-10">
+                <div class="text-center space-y-3">
+                    <h2 class="text-4xl font-black text-dark tracking-tight">Application for Admission</h2>
+                    <p class="text-gray-400 font-medium">Please fill in the details below. Our academic counselor will get in touch with you shortly.</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black text-dark uppercase tracking-widest ml-1">Full Name</label>
+                            <input type="text" class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-primary focus:bg-white transition font-semibold" placeholder="e.g. John Doe">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black text-dark uppercase tracking-widest ml-1">Phone Number</label>
+                            <input type="tel" class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-primary focus:bg-white transition font-semibold" placeholder="+91 00000 00000">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black text-dark uppercase tracking-widest ml-1">Email Address</label>
+                        <input type="email" class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-primary focus:bg-white transition font-semibold" placeholder="john@example.com">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black text-dark uppercase tracking-widest ml-1">Select Center</label>
+                        <select class="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-primary focus:bg-white transition font-semibold appearance-none">
+                            <option>New Delhi - HQ</option>
+                            <option>Mumbai - West</option>
+                            <option>Bangalore - South</option>
+                            <option>Kota - Main</option>
+                        </select>
+                    </div>
+                    <div class="pt-4">
+                        <button class="w-full bg-dark text-white py-5 rounded-xl font-black text-lg hover:bg-black transition shadow-2xl">Submit Application</button>
+                    </div>
+                </form>
+                <p class="text-center text-[10px] text-gray-400 font-bold uppercase tracking-widest">By submitting, you agree to our <a href="#" class="text-primary underline">Admission Terms</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex items-center justify-center gap-2">
+                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+            </div>
+            <p class="text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em]">© 2026 Elite Academy. Excellence in Competitive Education.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty | Elite Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #FF7F1E; }
+        .text-primary { color: #FF7F1E; }
+        .bg-dark { background-color: #1E293B; }
+        .text-dark { color: #1E293B; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">E</span>
+                    </div>
+                    <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-primary transition">Home</a>
+                    <a href="courses.html" class="hover:text-primary transition">Courses</a>
+                    <a href="faculty.html" class="text-primary">Faculty</a>
+                    <a href="results.html" class="hover:text-primary transition">Success Stories</a>
+                    <a href="about.html" class="hover:text-primary transition">About Us</a>
+                    <a href="courses.html" class="bg-primary text-white px-5 py-2.5 rounded-md font-semibold hover:bg-orange-600 transition shadow-md">Book Demo</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 space-y-4">
+            <a href="index.html" class="block hover:text-primary transition">Home</a>
+            <a href="courses.html" class="block hover:text-primary transition">Courses</a>
+            <a href="faculty.html" class="block text-primary font-semibold">Faculty</a>
+            <a href="results.html" class="block hover:text-primary transition">Success Stories</a>
+            <a href="about.html" class="block hover:text-primary transition">About Us</a>
+            <a href="courses.html" class="block bg-primary text-white px-5 py-2.5 rounded-md text-center font-semibold">Book Demo</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-24 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h1 class="text-5xl lg:text-6xl font-black text-dark leading-tight tracking-tight">Learn from India's Most <br><span class="text-primary">Distinguished Educators</span></h1>
+            <p class="text-gray-500 max-w-3xl mx-auto text-lg leading-relaxed font-medium">Our faculty represents the pinnacle of academic excellence, dedicated to shaping the next generation of top performers in JEE, NEET, and Board examinations.</p>
+        </div>
+    </section>
+
+    <!-- Subject Filters -->
+    <section class="py-8 bg-gray-50 border-b overflow-x-auto whitespace-nowrap">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-8">
+            <div class="flex gap-2">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest flex items-center mr-4">Subject:</span>
+                <button class="px-6 py-2 bg-dark text-white rounded-full text-xs font-bold transition">All</button>
+                <button class="px-6 py-2 bg-white border border-gray-200 text-gray-500 rounded-full text-xs font-bold hover:border-primary hover:text-primary transition">Physics</button>
+                <button class="px-6 py-2 bg-white border border-gray-200 text-gray-500 rounded-full text-xs font-bold hover:border-primary hover:text-primary transition">Chemistry</button>
+                <button class="px-6 py-2 bg-white border border-gray-200 text-gray-500 rounded-full text-xs font-bold hover:border-primary hover:text-primary transition">Maths</button>
+                <button class="px-6 py-2 bg-white border border-gray-200 text-gray-500 rounded-full text-xs font-bold hover:border-primary hover:text-primary transition">Biology</button>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Exam:</span>
+                <select class="bg-white border border-gray-200 rounded-lg px-4 py-2 text-xs font-bold text-gray-700 focus:outline-none">
+                    <option>All Exams</option>
+                    <option>JEE</option>
+                    <option>NEET</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
+            <!-- Faculty 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-xl group hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-[400px] overflow-hidden">
+                    <img src="assets/images/faculty-3.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full flex items-center gap-2 border border-white">
+                        <div class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
+                        <span class="text-[10px] font-black text-dark uppercase tracking-widest">Verified Expert</span>
+                    </div>
+                </div>
+                <div class="p-10 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-3xl font-black text-dark">Dr. Arvind Sharma</h3>
+                        <p class="text-primary font-bold text-xs uppercase tracking-[0.2em]">HOD Physics</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-600">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.827a1 1 0 00-.788 0l-7 3a1 1 0 000 1.846l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.846l-7-3zM3.108 8.1l6.892 2.954 6.892-2.954-6.892-2.954L3.108 8.1zM15 11.608l-4.206 1.802A2.001 2.001 0 0110 14.5a2.001 2.001 0 01-.794-1.09L5 11.608V14.5a1 1 0 00.553.894l4 2a1 1 0 00.894 0l4-2A1 1 0 0015 14.5v-2.892z"></path></svg>
+                            Ph.D. in Applied Physics, IIT Delhi
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-600">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                            15+ Years Experience
+                        </li>
+                    </ul>
+                    <p class="text-gray-500 leading-relaxed font-medium">Believes in building strong fundamental concepts through real-world applications. Known for simplifying complex mechanics problems and mentoring top JEE rankers.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#" class="py-4 rounded-xl border-2 border-gray-100 text-center font-bold text-dark hover:border-primary hover:text-primary transition">View Profile</a>
+                        <a href="#" class="py-4 rounded-xl bg-primary text-white text-center font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-100">Book Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-xl group hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-[400px] overflow-hidden">
+                    <img src="assets/images/faculty-4.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full flex items-center gap-2 border border-white">
+                        <div class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
+                        <span class="text-[10px] font-black text-dark uppercase tracking-widest">Verified Expert</span>
+                    </div>
+                </div>
+                <div class="p-10 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-3xl font-black text-dark">Prof. Meera Reddy</h3>
+                        <p class="text-primary font-bold text-xs uppercase tracking-[0.2em]">Senior Chemistry Faculty</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-600">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.827a1 1 0 00-.788 0l-7 3a1 1 0 000 1.846l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.846l-7-3zM3.108 8.1l6.892 2.954 6.892-2.954-6.892-2.954L3.108 8.1zM15 11.608l-4.206 1.802A2.001 2.001 0 0110 14.5a2.001 2.001 0 01-.794-1.09L5 11.608V14.5a1 1 0 00.553.894l4 2a1 1 0 00.894 0l4-2A1 1 0 0015 14.5v-2.892z"></path></svg>
+                            M.Sc. Chemistry, IISc Bangalore
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-600">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                            12+ Years Experience
+                        </li>
+                    </ul>
+                    <p class="text-gray-500 leading-relaxed font-medium">Focuses on intuitive understanding of organic reaction mechanisms. Her structured approach to inorganic chemistry has consistently helped students.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#" class="py-4 rounded-xl border-2 border-gray-100 text-center font-bold text-dark hover:border-primary hover:text-primary transition">View Profile</a>
+                        <a href="#" class="py-4 rounded-xl bg-primary text-white text-center font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-100">Book Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faculty 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-xl group hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-[400px] overflow-hidden">
+                    <img src="assets/images/faculty-1.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full flex items-center gap-2 border border-white">
+                        <div class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></div>
+                        <span class="text-[10px] font-black text-dark uppercase tracking-widest">Verified Expert</span>
+                    </div>
+                </div>
+                <div class="p-10 space-y-6">
+                    <div class="space-y-1">
+                        <h3 class="text-3xl font-black text-dark">Rahul Verma</h3>
+                        <p class="text-primary font-bold text-xs uppercase tracking-[0.2em]">Lead Mathematics Mentor</p>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-600">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.827a1 1 0 00-.788 0l-7 3a1 1 0 000 1.846l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.846l-7-3zM3.108 8.1l6.892 2.954 6.892-2.954-6.892-2.954L3.108 8.1zM15 11.608l-4.206 1.802A2.001 2.001 0 0110 14.5a2.001 2.001 0 01-.794-1.09L5 11.608V14.5a1 1 0 00.553.894l4 2a1 1 0 00.894 0l4-2A1 1 0 0015 14.5v-2.892z"></path></svg>
+                            B.Tech, IIT Bombay
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-gray-600">
+                            <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                            8+ Years Experience
+                        </li>
+                    </ul>
+                    <p class="text-gray-500 leading-relaxed font-medium">Transforms abstract mathematical concepts into visual, solvable models. His dynamic teaching style keeps students engaged and builds exceptional problem-solving speed.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#" class="py-4 rounded-xl border-2 border-gray-100 text-center font-bold text-dark hover:border-primary hover:text-primary transition">View Profile</a>
+                        <a href="#" class="py-4 rounded-xl bg-primary text-white text-center font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-100">Book Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-white border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                    <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8 text-xs font-bold text-gray-400 uppercase tracking-widest">
+                    <a href="about.html" class="hover:text-primary transition">Privacy Policy</a>
+                    <a href="about.html" class="hover:text-primary transition">Terms of Service</a>
+                    <a href="about.html" class="hover:text-primary transition">Careers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

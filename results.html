@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories | Elite Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #FF7F1E; }
+        .text-primary { color: #FF7F1E; }
+        .bg-dark { background-color: #1E293B; }
+        .text-dark { color: #1E293B; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                    <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-primary transition">Home</a>
+                    <a href="courses.html" class="hover:text-primary transition">Courses</a>
+                    <a href="faculty.html" class="hover:text-primary transition">Faculty</a>
+                    <a href="results.html" class="text-primary font-semibold">Success Stories</a>
+                    <a href="about.html" class="hover:text-primary transition">About Us</a>
+                    <a href="courses.html" class="bg-primary text-white px-5 py-2.5 rounded-md font-semibold shadow-md">Book Demo</a>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-button"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-24 bg-white border-b text-center space-y-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl lg:text-7xl font-black text-dark tracking-tight leading-tight">Celebrating Every <br><span class="text-primary">Milestone Achieved</span></h1>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed font-medium">Our results are a testament to the hard work of our students and the unwavering commitment of our mentors. Join the ranks of India's top achievers.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center space-y-2">
+                <p class="text-4xl lg:text-5xl font-black text-white">500+</p>
+                <p class="text-primary font-bold text-[10px] uppercase tracking-widest">IIT JEE Selections</p>
+            </div>
+            <div class="text-center space-y-2 border-l border-white/10">
+                <p class="text-4xl lg:text-5xl font-black text-white">850+</p>
+                <p class="text-primary font-bold text-[10px] uppercase tracking-widest">NEET Qualifiers</p>
+            </div>
+            <div class="text-center space-y-2 border-l border-white/10">
+                <p class="text-4xl lg:text-5xl font-black text-white">98%</p>
+                <p class="text-primary font-bold text-[10px] uppercase tracking-widest">Board Pass Rate</p>
+            </div>
+            <div class="text-center space-y-2 border-l border-white/10">
+                <p class="text-4xl lg:text-5xl font-black text-white">10+</p>
+                <p class="text-primary font-bold text-[10px] uppercase tracking-widest">Years of Excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Wall -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-black text-dark tracking-tight">Hall of Fame 2024</h2>
+                    <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">A snapshot of our top performing students in recent national examinations.</p>
+                </div>
+                <div class="flex gap-4">
+                    <button class="px-6 py-2 bg-dark text-white rounded-full text-xs font-bold transition">All Results</button>
+                    <button class="px-6 py-2 bg-white border border-gray-200 text-gray-500 rounded-full text-xs font-bold hover:border-primary transition">JEE Mains</button>
+                    <button class="px-6 py-2 bg-white border border-gray-200 text-gray-500 rounded-full text-xs font-bold hover:border-primary transition">NEET</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Result Card 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-xl space-y-4 group hover:border-primary transition duration-500">
+                    <div class="relative w-full pt-[100%] rounded-2xl overflow-hidden bg-gray-100">
+                        <img src="assets/images/student-1.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-center space-y-1">
+                        <h4 class="text-lg font-black text-dark">Aditi Singh</h4>
+                        <p class="text-primary font-bold text-[10px] uppercase tracking-widest">AIR 42 | JEE Adv 2024</p>
+                        <p class="text-gray-400 text-[10px] font-medium italic">"Elite Academy changed my approach to Physics."</p>
+                    </div>
+                </div>
+                <!-- Result Card 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-xl space-y-4 group hover:border-primary transition duration-500">
+                    <div class="relative w-full pt-[100%] rounded-2xl overflow-hidden bg-gray-100">
+                        <img src="assets/images/student-1.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-center space-y-1">
+                        <h4 class="text-lg font-black text-dark">Sameer Khanna</h4>
+                        <p class="text-primary font-bold text-[10px] uppercase tracking-widest">AIR 156 | NEET 2024</p>
+                        <p class="text-gray-400 text-[10px] font-medium italic">"The mentorship here is unmatched."</p>
+                    </div>
+                </div>
+                <!-- Result Card 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-xl space-y-4 group hover:border-primary transition duration-500">
+                    <div class="relative w-full pt-[100%] rounded-2xl overflow-hidden bg-gray-100">
+                        <img src="assets/images/student-1.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-center space-y-1">
+                        <h4 class="text-lg font-black text-dark">Rohan Gupta</h4>
+                        <p class="text-primary font-bold text-[10px] uppercase tracking-widest">99.8% | CBSE Boards</p>
+                        <p class="text-gray-400 text-[10px] font-medium italic">"Structured study materials helped a lot."</p>
+                    </div>
+                </div>
+                <!-- Result Card 4 -->
+                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-xl space-y-4 group hover:border-primary transition duration-500">
+                    <div class="relative w-full pt-[100%] rounded-2xl overflow-hidden bg-gray-100">
+                        <img src="assets/images/student-1.png" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="text-center space-y-1">
+                        <h4 class="text-lg font-black text-dark">Isha Verma</h4>
+                        <p class="text-primary font-bold text-[10px] uppercase tracking-widest">AIR 289 | JEE Adv 2024</p>
+                        <p class="text-gray-400 text-[10px] font-medium italic">"Grateful for the rigorous test series."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+             <h2 class="text-4xl font-black text-dark tracking-tight">Voices of Excellence</h2>
+        </div>
+        <div class="flex gap-8 overflow-x-auto pb-12 px-4 snap-x">
+             <!-- Testimonial 1 -->
+             <div class="min-w-[320px] md:min-w-[450px] bg-gray-50 p-10 rounded-3xl border border-gray-100 space-y-8 snap-center">
+                <div class="flex gap-1 text-primary">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <p class="text-xl font-medium text-dark leading-relaxed italic">"The personalized attention I received at Elite Academy was incredible. My mentors were always available to clear my doubts, no matter how small."</p>
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/student-1.png" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-black text-dark text-sm">Priya Desai</h4>
+                        <p class="text-gray-400 font-bold text-[10px] uppercase tracking-widest">Medical Aspirant</p>
+                    </div>
+                </div>
+             </div>
+             <!-- Testimonial 2 -->
+             <div class="min-w-[320px] md:min-w-[450px] bg-gray-50 p-10 rounded-3xl border border-gray-100 space-y-8 snap-center">
+                <div class="flex gap-1 text-primary">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <p class="text-xl font-medium text-dark leading-relaxed italic">"The test series at Elite Academy was exactly like the real JEE exam. It built my confidence and helped me manage my time effectively."</p>
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/student-1.png" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-black text-dark text-sm">Akash Sharma</h4>
+                        <p class="text-gray-400 font-bold text-[10px] uppercase tracking-widest">IITian</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-primary text-white text-center space-y-10">
+        <div class="space-y-4">
+            <h2 class="text-4xl font-black">Be the next success story</h2>
+            <p class="text-orange-100 font-medium max-w-xl mx-auto">Our next batch starts soon. Limited seats available for personalized mentorship.</p>
+        </div>
+        <a href="courses.html" class="inline-block bg-white text-primary px-10 py-5 rounded-xl font-black text-lg hover:bg-orange-50 transition shadow-2xl">Enroll Today</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+            </div>
+            <div class="text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em]">
+                © 2026 Elite Academy. Excellence is a Habit.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

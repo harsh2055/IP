@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Elite Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-primary { background-color: #FF7F1E; }
+        .text-primary { color: #FF7F1E; }
+        .bg-dark { background-color: #1E293B; }
+        .text-dark { color: #1E293B; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                    <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-primary transition">Home</a>
+                    <a href="courses.html" class="hover:text-primary transition">Courses</a>
+                    <a href="faculty.html" class="hover:text-primary transition">Faculty</a>
+                    <a href="results.html" class="hover:text-primary transition">Success Stories</a>
+                    <a href="about.html" class="text-primary">About Us</a>
+                    <a href="courses.html" class="bg-primary text-white px-5 py-2.5 rounded-md font-semibold shadow-md">Enroll Now</a>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-button"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <section class="py-24 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h1 class="text-5xl lg:text-7xl font-black text-dark tracking-tight leading-tight">Empowering Minds, <br><span class="text-primary">Shaping Futures</span></h1>
+            <p class="text-gray-500 max-w-3xl mx-auto text-lg leading-relaxed font-medium">Since our humble beginnings in 2016, Elite Academy has been dedicated to forging pathways of excellence. We believe in the transformative power of education and the profound impact of dedicated mentorship on a student's journey.</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-12 rounded-3xl border border-gray-100 shadow-xl space-y-6 group hover:-translate-y-2 transition duration-500">
+                <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+                </div>
+                <h3 class="text-3xl font-black text-dark">Our Mission</h3>
+                <p class="text-gray-500 leading-relaxed font-medium">To democratize high-quality education, making it accessible to aspiring minds across the nation. We strive to provide rigorous, structured, and comprehensive coaching that equips students with the knowledge and analytical skills required to excel in highly competitive environments.</p>
+            </div>
+            <div class="bg-white p-12 rounded-3xl border border-gray-100 shadow-xl space-y-6 group hover:-translate-y-2 transition duration-500">
+                <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-3xl font-black text-dark">Our Vision</h3>
+                <p class="text-gray-500 leading-relaxed font-medium">To be recognized as India's most trusted and effective mentor-led educational platform. We envision a future where every dedicated student, regardless of their background, has the strategic guidance necessary to achieve their academic and professional dreams.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story / Timeline -->
+    <section class="py-24 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20 space-y-4">
+            <h2 class="text-4xl font-black text-dark">Our Story</h2>
+            <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">A journey of dedication, growth, and relentless pursuit of excellence.</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <!-- Timeline Line -->
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 -translate-x-1/2 hidden md:block"></div>
+            
+            <div class="space-y-24 relative">
+                <!-- 2016 -->
+                <div class="md:flex items-center justify-between gap-20">
+                    <div class="md:w-1/2 text-right hidden md:block">
+                        <span class="text-4xl font-black text-dark">2016</span>
+                        <p class="text-primary font-bold uppercase tracking-widest text-xs mt-1">The Inception</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white hidden md:block"></div>
+                    <div class="md:w-1/2 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="md:hidden mb-4">
+                            <span class="text-3xl font-black text-dark">2016</span>
+                            <p class="text-primary font-bold uppercase tracking-widest text-xs">The Inception</p>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed font-medium">Started in a small classroom with a cohort of just 50 dedicated students, driven by a clear vision to provide superior academic guidance.</p>
+                    </div>
+                </div>
+
+                <!-- 2019 -->
+                <div class="md:flex items-center justify-between gap-20">
+                    <div class="md:w-1/2 bg-white p-8 rounded-2xl shadow-lg border border-gray-100 order-2 md:order-1">
+                        <div class="md:hidden mb-4">
+                            <span class="text-3xl font-black text-dark">2019</span>
+                            <p class="text-primary font-bold uppercase tracking-widest text-xs">Expanding Horizons</p>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed font-medium">Launched comprehensive digital learning modules and expanded our faculty, reaching over 2,000 students across multiple cities.</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white hidden md:block"></div>
+                    <div class="md:w-1/2 text-left hidden md:block order-1 md:order-2">
+                        <span class="text-4xl font-black text-dark">2019</span>
+                        <p class="text-primary font-bold uppercase tracking-widest text-xs mt-1">Expanding Horizons</p>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="md:flex items-center justify-between gap-20">
+                    <div class="md:w-1/2 text-right hidden md:block">
+                        <span class="text-4xl font-black text-dark">2024</span>
+                        <p class="text-primary font-bold uppercase tracking-widest text-xs mt-1">A Community of Achievers</p>
+                    </div>
+                    <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white hidden md:block"></div>
+                    <div class="md:w-1/2 bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="md:hidden mb-4">
+                            <span class="text-3xl font-black text-dark">2024</span>
+                            <p class="text-primary font-bold uppercase tracking-widest text-xs">A Community of Achievers</p>
+                        </div>
+                        <p class="text-gray-500 leading-relaxed font-medium">Celebrating a milestone of 10,000+ successful alumni, establishing ourselves as a premier destination for competitive exam preparation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16 space-y-4">
+            <h2 class="text-4xl font-black text-dark">Leadership Team</h2>
+            <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">Guided by experienced educators and visionaries.</p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12">
+            <div class="text-center space-y-6">
+                <div class="relative w-64 h-64 mx-auto">
+                    <img src="assets/images/faculty-3.png" class="w-full h-full object-cover rounded-3xl shadow-2xl">
+                    <div class="absolute inset-0 border-4 border-primary/20 rounded-3xl -m-2 -z-10"></div>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-black text-dark">Dr. Alok Sharma</h4>
+                    <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">Founder & Director</p>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-sm mx-auto font-medium">With over 20 years of experience in higher education, Dr. Sharma founded Elite Academy to bridge the gap between potential and achievement.</p>
+            </div>
+            <div class="text-center space-y-6">
+                <div class="relative w-64 h-64 mx-auto">
+                    <img src="assets/images/faculty-4.png" class="w-full h-full object-cover rounded-3xl shadow-2xl">
+                    <div class="absolute inset-0 border-4 border-primary/20 rounded-3xl -m-2 -z-10"></div>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-black text-dark">Prof. Meera Desai</h4>
+                    <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">Academic Head</p>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-sm mx-auto font-medium">An expert in curriculum design, Prof. Desai ensures that our instructional methodologies remain rigorous, contemporary, and highly effective.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-24 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20 space-y-4">
+            <h2 class="text-4xl font-black">Our Core Values</h2>
+            <p class="text-gray-400 font-bold uppercase tracking-widest text-xs">The principles that guide every decision and interaction at Elite Academy.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="space-y-4 text-center group">
+                <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-primary transition duration-500">
+                    <svg class="w-8 h-8 text-primary group-hover:text-white transition" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <h4 class="text-lg font-bold">Excellence</h4>
+                <p class="text-gray-500 text-xs leading-relaxed">We demand the highest standards in our teaching, materials, and student outcomes.</p>
+            </div>
+            <div class="space-y-4 text-center group">
+                <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-primary transition duration-500">
+                    <svg class="w-8 h-8 text-primary group-hover:text-white transition" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.9L10 .155 17.834 4.9a2 2 0 011.166 1.811v3.57a10 10 0 01-5.993 9.152L10 20l-3.007-1.567A10 10 0 011 10.281v-3.57a2 2 0 011.166-1.811zM10 14a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h4 class="text-lg font-bold">Integrity</h4>
+                <p class="text-gray-500 text-xs leading-relaxed">Honesty, transparency, and ethical conduct form the foundation of our institution.</p>
+            </div>
+            <div class="space-y-4 text-center group">
+                <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-primary transition duration-500">
+                    <svg class="w-8 h-8 text-primary group-hover:text-white transition" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
+                </div>
+                <h4 class="text-lg font-bold">Student-First</h4>
+                <p class="text-gray-500 text-xs leading-relaxed">Every strategy and resource is aligned to maximize student success and well-being.</p>
+            </div>
+            <div class="space-y-4 text-center group">
+                <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto group-hover:bg-primary transition duration-500">
+                    <svg class="w-8 h-8 text-primary group-hover:text-white transition" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h4 class="text-lg font-bold">Innovation</h4>
+                <p class="text-gray-500 text-xs leading-relaxed">Continuously evolving our pedagogical approaches to stay ahead of educational trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-dark text-white border-t border-white/5 text-center space-y-10">
+        <div class="space-y-4">
+            <h2 class="text-4xl font-black">Ready to join the elite?</h2>
+            <p class="text-gray-400 font-medium max-w-xl mx-auto">Experience our teaching methodology firsthand. Take the first step towards your academic goals today.</p>
+        </div>
+        <a href="courses.html" class="inline-block bg-primary text-white px-10 py-5 rounded-xl font-black text-lg hover:bg-orange-600 transition shadow-2xl shadow-orange-900/50">Book a Free Demo</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="space-y-6">
+                   <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">E</div>
+                        <span class="text-xl font-extrabold text-dark tracking-tight">Elite Academy</span>
+                    </div>
+                    <div class="flex gap-8 text-xs font-bold text-gray-400 uppercase tracking-widest">
+                        <a href="#mission" class="hover:text-primary transition">Mission & Vision</a>
+                        <a href="#story" class="hover:text-primary transition">Our Story</a>
+                        <a href="#leadership" class="hover:text-primary transition">Leadership Team</a>
+                    </div>
+                </div>
+                <div class="text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em]">
+                    © 2026 Elite Academy Coaching Institute. <br>Professional Excellence in Education.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
